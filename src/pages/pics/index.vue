@@ -1,6 +1,7 @@
 <template>
   <view class="pics">
     <text>{{ msg }}</text>
+    <tabbar/>
   </view>
 </template>
 

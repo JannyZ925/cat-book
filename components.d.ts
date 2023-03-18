@@ -11,5 +11,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     NutTabbar: typeof import('@nutui/nutui-taro')['Tabbar']
     NutTabbarItem: typeof import('@nutui/nutui-taro')['TabbarItem']
+    Tabbar: typeof import('./src/components/tabbar/index.vue')['default']
   }
 }
