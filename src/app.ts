@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import './request'
 import './app.scss'
 
 const App = createApp({
