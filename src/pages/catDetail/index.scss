@@ -1,0 +1,112 @@
+@import "@/app.scss";
+
+.nut-swiper-item {
+  height: 400px;
+  image {
+    width: 100%;
+  }
+}
+
+.cat-info {
+  padding: 0 20px;
+  box-shadow: 0 0 20px lightgray;
+  .header {
+    @extend .flex, .justify-between;
+
+    padding: 40px 0;
+
+    .left {
+      @extend .flex, .align-center;
+
+      .name {
+        font-weight: bolder;
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
+
+    .right {
+      text-align: right;
+
+      .nut-tag {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .main {
+    @extend .flex, .justify-between;
+    flex-wrap: wrap;
+
+    .main-item {
+      @extend .flex;
+      flex-direction: column;
+      width: 33.3%;
+      margin-bottom: 40px;
+
+      .title {
+        border-left: 8px solid #3460fa;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.album {
+  padding: 20px 10px;
+
+  .header {
+    @extend .flex, .align-center;
+
+    image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .title {
+      @extend .flex;
+
+      flex-direction: column;
+
+      .name {
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      .total {
+        font-size: 25px;
+      }
+    }
+  }
+  .pics-container {
+    .container-item {
+      .date {
+        @extend .flex, .align-center;
+        padding: 20px 0;
+      }
+      .pics {
+        @extend .flex, .justify-between;
+        flex-wrap: wrap;
+
+        .pic-item {
+          width: 33%;
+          height: 200px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.nav-item-text {
+  font-size: 20px;
+}
+
+.nav-btn-text {
+  font-size: 30px;
+  color: white;
+}

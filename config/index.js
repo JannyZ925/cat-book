@@ -43,8 +43,11 @@ const config = {
     enable: false, // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
   alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
     '@/utils': path.resolve(__dirname, '..', 'src/utils'),
-    '@/apis': path.resolve(__dirname, '..', 'src/apis')
+    '@/apis': path.resolve(__dirname, '..', 'src/apis'),
+    '@/consts': path.resolve(__dirname, '..', 'src/consts'),
+    '@/store': path.resolve(__dirname, '..', 'src/store')
   },
   mini: {
     postcss: {

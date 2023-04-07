@@ -1,0 +1,62 @@
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.border-radius-15 {
+    border-radius: 15px;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id 3962812 */
+    src: url("//at.alicdn.com/t/c/font_3962812_mddwbfqspwh.woff2?t=1679242921182") format("woff2"),
+        url("//at.alicdn.com/t/c/font_3962812_mddwbfqspwh.woff?t=1679242921182") format("woff"),
+        url("//at.alicdn.com/t/c/font_3962812_mddwbfqspwh.ttf?t=1679242921182") format("truetype");
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-liuyanjianyi:before {
+    content: "\e62c";
+}
+
+.icon-yu:before {
+    content: "\e601";
+}
+
+.icon-nan:before {
+    content: "\e8b3";
+}
+
+.icon-nv:before {
+    content: "\e8b4";
+}
+
+.icon-dizhi:before {
+    content: "\e652";
+}
+
+.icon-maomi:before {
+    content: "\e602";
+}
+
+.icon-shengridangao:before {
+    content: "\e620";
+}
+
+.icon-aixin:before {
+    content: "\e83f";
+}

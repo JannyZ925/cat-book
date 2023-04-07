@@ -22,8 +22,11 @@
       "node_modules/@types"
     ],
     "paths": {
+      "@/*": ["./src/*"],
       "@/utils/*": ["./src/utils/*"],
-      "@/apis": ["./src/apis/*"]
+      "@/apis": ["./src/apis/*"],
+      "@/consts": ["./src/consts/*"],
+      "@/store": ["./src/store/*"]
     }
   },
   "include": ["./src", "./types"],

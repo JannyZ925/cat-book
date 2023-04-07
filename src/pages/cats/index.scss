@@ -1,0 +1,63 @@
+@import "@/app.scss";
+
+.cat-list {
+    padding: 20px 40px;
+
+    .cat-item {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        margin-bottom: 30px;
+        @extend .border-radius-15;
+
+        .cat-img image {
+            width: 100%;
+            @extend .border-radius-15;
+        }
+
+        .cat-info {
+            padding: 20px;
+
+            .head {
+                @extend .flex, .justify-between;
+
+                .left {
+                    @extend .flex, .align-center;
+
+                    .name {
+                        font-weight: bold;
+                    }
+                }
+
+                .right {
+                    width: 35%;
+                    @extend .flex, .justify-between;
+
+                    .right-item {
+                        @extend .flex, .align-center;
+                    }
+                }
+
+                .head-text {
+                    margin: 10px;
+                }
+            }
+
+            .main {
+                .main-item {
+                    line-height: 60px;
+                    @extend .flex, .align-center;
+
+                    .main-icon {
+                        margin-right: 10px;
+                    }
+
+                    .main-text {
+                        width: 95%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}

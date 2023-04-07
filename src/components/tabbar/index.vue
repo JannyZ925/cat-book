@@ -48,12 +48,17 @@ export default {
         icon: h(My),
         link: "/pages/about/index",
       },
+      {
+        title: "测试",
+        icon: h(My),
+        link: "/pages/test/index",
+      },
     ];
 
     const { router } = Taro.getCurrentInstance();
     tabList.forEach((item, index) => {
-      if(item.link === router.path) active.value = index;
-    })
+      if (item.link === router.path) active.value = index;
+    });
 
     function tabSwitch(item, index) {
       Taro.navigateTo({
@@ -64,7 +69,7 @@ export default {
     return {
       tabList,
       tabSwitch,
-      active
+      active,
     };
   },
 };
